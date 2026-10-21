@@ -1,6 +1,6 @@
 # world-flights
 
-An [AlreadyOpen](https://github.com/milleleaf) pipeline: adsb.lol's daily global ADS-B history as GeoParquet (every point,
+An [Milleleaf](https://github.com/milleleaf) pipeline: adsb.lol's daily global ADS-B history as GeoParquet (every point,
 every field) plus a browser replay file, and Hong Kong near-live snapshots every 15 minutes. The archive is on Kaggle (free public storage): one dataset per day, `helenkwok/world-flights-<D>`, created
 once and never changed, plus `helenkwok/world-flights` indexing them. Hugging Face (`alreadyopen/world-flights`) keeps only what
 the map needs: the bucket holds the last `HF_DAYS` = 7 days of traces and replay, the index and `live/hk*`; the dataset repo

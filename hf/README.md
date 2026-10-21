@@ -13,7 +13,7 @@ tags:
 # World flights
 
 Every aircraft position adsb.lol's feeders received, one day at a time, plus near-live snapshots around Hong Kong. Rebuilt by
-[AlreadyOpen/world-flights](https://github.com/milleleaf/world-flights): the daily bake runs at 04:30 UTC, after adsb.lol
+[milleleaf/world-flights](https://github.com/milleleaf/world-flights): the daily bake runs at 04:30 UTC, after adsb.lol
 publishes the previous UTC day (about 03:26 UTC); the Hong Kong snapshot runs every 15 minutes.
 
 ## Where the data is
@@ -86,6 +86,6 @@ ODbL 1.0". Feeders waive their rights to the raw data under CC0; adsb.lol releas
 
 Every file, here and in the Kaggle datasets, is a **derived database under the ODbL**: if you publicly use or share a database adapted from it, you must
 release that adapted database under the ODbL (share-alike), credit adsb.lol contributors, and keep it open. That is why this
-dataset holds adsb.lol data only and is kept apart from AlreadyOpen datasets under other licences; combining them is your
+dataset holds adsb.lol data only and is kept apart from Milleleaf datasets under other licences; combining them is your
 choice and your share-alike obligation. Aircraft registration and type fields come with readsb's database as bundled in the
 release. Provided as is, with no warranty, and not endorsed by adsb.lol.

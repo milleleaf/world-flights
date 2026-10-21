@@ -28,7 +28,7 @@ HF_DAYS = 7                                       # days of traces and replay on
 REPO = 'milleleaf/world-flights'
 KG = 'https://www.kaggle.com/datasets/helenkwok/world-flights-'
 BK = f'https://huggingface.co/buckets/{REPO}/resolve/'
-UA = {'User-Agent': 'AlreadyOpen world-flights (https://github.com/milleleaf/world-flights)'}
+UA = {'User-Agent': 'Milleleaf world-flights (https://github.com/milleleaf/world-flights)'}
 REPLAY = """little-endian: b'AOR1', uint32 header length H, H bytes of JSON header (padded to 4), then N values per column in
 header.columns order: t int32 (s after day_start), lon int32 and lat int32 (1e-5 degrees), altitude int32 (ft; -999999 = ground,
 -2147483648 = none), ground_speed int16 (kt; -1 none), track int16 (0.1 degree; -1 none). header.aircraft = [[icao, registration,

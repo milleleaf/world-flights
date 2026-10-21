@@ -25,7 +25,7 @@ def main():
     else:
         top = sorted(os.listdir(root))
         assert len(top) <= 50, f'{len(top)} top-level paths: Kaggle allows 50'
-        kaggle_mirror.mirror(slug, f'AlreadyOpen: World flights {day}', root, top)   # creates: it does not exist
+        kaggle_mirror.mirror(slug, f'Milleleaf: World flights {day}', root, top)   # creates: it does not exist
     for _ in range(30):                                                # Kaggle processes an upload before listing its files
         if on_kaggle(slug): break
         time.sleep(60)

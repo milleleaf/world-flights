@@ -1,4 +1,4 @@
-"""Mirror what publish.py published to a public Kaggle dataset (the same file in every AlreadyOpen pipeline).
+"""Mirror what publish.py published to a public Kaggle dataset (the same file in every Milleleaf pipeline).
 Kaggle's "Remote URL" cannot pull from Hugging Face (every HF download is a 302 to a signed URL, which Kaggle refuses; a direct
 200 URL is accepted), so the files are uploaded. Runs after publish.py as its own step with continue-on-error: Kaggle failing
 never blocks Hugging Face. Needs KAGGLE_API_TOKEN in the environment (a repo secret; never on argv). The dataset is owned by

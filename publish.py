@@ -17,7 +17,7 @@ _idx = os.path.join(sources.OUT, 'index.json')
 NEW = json.load(open(_idx)).get('new', []) if os.path.exists(_idx) else []
 DATASET_FILES = ['index.json']
 BUCKET_FILES = ['index.json', 'latest.json'] + NEW
-KAGGLE = ('helenkwok/world-flights', 'AlreadyOpen: World flights (adsb.lol)')   # index of the day datasets (kaggle_archive.py)
+KAGGLE = ('helenkwok/world-flights', 'Milleleaf: World flights (adsb.lol)')   # index of the day datasets (kaggle_archive.py)
 day_slug = lambda day: f'{KAGGLE[0]}-{day}'
 
 

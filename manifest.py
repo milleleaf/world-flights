@@ -1,4 +1,4 @@
-"""Publish gate and output manifest (the same file in every AlreadyOpen pipeline; a template repo once there are three).
+"""Publish gate and output manifest (the same file in every Milleleaf pipeline; a template repo once there are three).
 manifest(): sha256 and size of every published file, the bake's counts, and the declared sources (sources.json).
 gate(): run before any upload. Compares the new manifest with the one already published and refuses (exit 1) when a count
 disappears or drops by more than DROP, or a file is empty; nothing published yet (first run) passes. PUBLISH_FORCE=1 publishes

@@ -10,7 +10,7 @@ import duckdb
 from huggingface_hub import batch_bucket_files, create_bucket, download_bucket_files
 
 URL = 'https://api.adsb.lol/v2/point/22.3/114.2/250'
-UA = {'User-Agent': 'AlreadyOpen world-flights (https://github.com/milleleaf/world-flights)'}
+UA = {'User-Agent': 'Milleleaf world-flights (https://github.com/milleleaf/world-flights)'}
 REPO = 'milleleaf/world-flights'
 ROWS = """
 SELECT to_timestamp((j->>'now')::BIGINT / 1000) AS "snapshot", j->>'msg' AS "msg", (j->>'total')::INTEGER AS "total",
