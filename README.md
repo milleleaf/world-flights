@@ -1,6 +1,6 @@
 # world-flights
 
-An [AlreadyOpen](https://github.com/AlreadyOpen) pipeline: adsb.lol's daily global ADS-B history as GeoParquet (every point,
+An [AlreadyOpen](https://github.com/milleleaf) pipeline: adsb.lol's daily global ADS-B history as GeoParquet (every point,
 every field) plus a browser replay file, and Hong Kong near-live snapshots every 15 minutes. The archive is on Kaggle (free public storage): one dataset per day, `helenkwok/world-flights-<D>`, created
 once and never changed, plus `helenkwok/world-flights` indexing them. Hugging Face (`alreadyopen/world-flights`) keeps only what
 the map needs: the bucket holds the last `HF_DAYS` = 7 days of traces and replay, the index and `live/hk*`; the dataset repo
@@ -21,7 +21,7 @@ the prod release held 7,847 aircraft and 10.6M points (442 MB Parquet). A full p
 Kaggle limits (docs, 2026-10): 200 GB per dataset and 50 top-level files; no published limit on the number of public
 datasets. If one dataset a day ever becomes a problem, change `publish.day_slug` to weeks.
 
-Built from [pipeline-template](https://github.com/AlreadyOpen/pipeline-template); `manifest.py`, `check.py`, `check.yml`
+Built from [pipeline-template](https://github.com/milleleaf/pipeline-template); `manifest.py`, `check.py`, `check.yml`
 and `kaggle_mirror.py` are its shared files (`kaggle_mirror.mirror` uploads the Kaggle datasets).
 
 ## Lessons (each cost a failed run once)

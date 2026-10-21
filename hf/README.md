@@ -13,7 +13,7 @@ tags:
 # World flights
 
 Every aircraft position adsb.lol's feeders received, one day at a time, plus near-live snapshots around Hong Kong. Rebuilt by
-[AlreadyOpen/world-flights](https://github.com/AlreadyOpen/world-flights): the daily bake runs at 04:30 UTC, after adsb.lol
+[AlreadyOpen/world-flights](https://github.com/milleleaf/world-flights): the daily bake runs at 04:30 UTC, after adsb.lol
 publishes the previous UTC day (about 03:26 UTC); the Hong Kong snapshot runs every 15 minutes.
 
 ## Where the data is
@@ -25,7 +25,7 @@ publishes the previous UTC day (about 03:26 UTC); the Hong Kong snapshot runs ev
 - **Index of all days: [helenkwok/world-flights](https://www.kaggle.com/datasets/helenkwok/world-flights)** on Kaggle (updated
   daily): `index.json` with every day's dataset slug, aircraft, points and size, `latest.json`, and the newest complete Hong
   Kong day (`live/hk-YYYY-MM-DD.parquet`).
-- **Hugging Face, for maps: the last 7 days only.** The bucket `huggingface.co/buckets/alreadyopen/world-flights` (CORS and HTTP
+- **Hugging Face, for maps: the last 7 days only.** The bucket `huggingface.co/buckets/milleleaf/world-flights` (CORS and HTTP
   Range) holds `v/<YYYY-MM-DD>/traces-NNN.parquet` and `v/<YYYY-MM-DD>/replay/` for the newest 7 days, `index.json`,
   `latest.json` and `live/hk*`. A day leaves the bucket only after its Kaggle dataset is listed by Kaggle. This dataset repo
   holds only this card, `index.json` and `manifest.json`: no copy of the data.
