@@ -1,1 +1,1 @@
-{"bucket": "https://huggingface.co/buckets/milleleaf/world-flights", "day": "2026-10-28", "built": "2026-10-29T11:06:19+00:00", "counts": {"days": 19, "aircraft": 1416630, "points": 2006708685}, "removed_from_bucket": 0}
+{"bucket": "https://huggingface.co/buckets/milleleaf/world-flights", "day": "2026-10-29", "built": "2026-10-30T11:05:03+00:00", "counts": {"days": 20, "aircraft": 1495639, "points": 2116479927}, "removed_from_bucket": 46}
